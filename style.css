@@ -1,0 +1,82 @@
+body {
+background: lightskyblue;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+height:100%;
+}
+
+.wrapper {
+  /* display: flex; */
+  width: 800px;
+  margin: 30px auto;
+  color:white;
+  text-align:center;
+  border: solid 3px rgb(24, 88, 128);
+  box-shadow: 2px 5px 10px rgb(24, 88, 128);
+  padding-bottom: 55px;
+}
+
+/* Text Styling */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 7px rgb(24, 88, 128);
+}
+
+p {
+  font-size: 3em;
+  text-shadow: 1px 3px 7px rgb(24, 88, 128);
+}
+
+h1 {
+  padding-top: 0.65em;
+  padding-bottom: 0.25em;
+}
+
+/* Button Styling */
+button{
+  background: white;
+  color: rgb(24, 88, 128);
+  border: solid 1px white;
+  border-radius: 12px;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:1.2em;
+  padding:18px 10px;
+  width:180px;
+  margin: 10px;
+  outline: none;
+  box-shadow: 2px 5px 10px black;
+  transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
+}
+
+button:hover {
+  background: rgb(24, 88, 128);
+  border: solid 1px rgb(24, 88, 128);
+  color: white;
+        
+}
+
+button:active {
+  transform: scale(3);
+}
+
+
+/* Float Animation */
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 20px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-4px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
